@@ -1,0 +1,21 @@
+{{#if msg}}
+    <div class="alert alert-danger">
+        <strong>Warning!</strong> {{msg}}
+    </div>
+{{/if}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-5 col-md-3">
+            <div class="form-login">
+                <h4>Welcome back.</h4>
+                <form class="form-horizontal" method="post" action="/login">
+                    <input type="text" name="name" id="userName" class="form-control input-sm chat-input" placeholder="username" />
+                    </br>
+                    <input type="password" name="password" id="userPassword" class="form-control input-sm chat-input" placeholder="password" />
+                    </br>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block login-button">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

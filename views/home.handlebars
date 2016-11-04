@@ -1,0 +1,25 @@
+{{#if msg}}
+    <div class="alert alert-success">
+        <strong>Success!</strong> {{msg}}{{name}}
+    </div>
+{{/if}}
+{{#if name}}
+    <p>
+        {{#each tweet}}
+            <div class="container" style="width: 60%">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        {{this.name}}
+                    </div>
+                    <div class="panel-body">
+                        {{this.content}}
+                    </div>
+                </div>
+            </div>
+            <br>
+        {{/each}}
+    </p>
+{{else}}
+    <h2>For Using this application please log in </h2>
+{{/if}}
+

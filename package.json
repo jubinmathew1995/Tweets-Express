@@ -1,0 +1,18 @@
+{
+  "name": "teamtarget",
+  "version": "1.0.0",
+  "description": "A to-do application for keeping the developer team up to date about their individual targets towards the project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jubin",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.14.2",
+    "mongoose": "^4.6.6"
+  }
+}
