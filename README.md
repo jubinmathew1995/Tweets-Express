@@ -1,2 +1,2 @@
-# TeamTarget 
-A express applicaiton which is used to keep a track on the team's work with a very simplestic design.
+# Tweet-Express
+A express applicaiton which can be used to tweet among friends.
