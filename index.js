@@ -6,6 +6,7 @@ var mongoose = require('mongoose');
 var exphbs  = require('express-handlebars');
 var session = require('express-session');
 var app = express();
+const db_url = require('./config');
 
 // Handlebars setup
 console.log('Handlebars setup');
@@ -33,7 +34,7 @@ app.use(session({
 }));
 
 //MongoDB database server configuration running
-mongoose.connect('mongodb://127.0.0.1:27017/test');
+mongoose.connect(DATABASE_URL);
 var db=mongoose.connection;
 db.on('error',  console.error.bind(console,'connecting error '));
 db.once('open',function(){
